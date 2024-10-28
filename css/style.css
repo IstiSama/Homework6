@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+
+body, html {
+    background-color: #D7B520;
+    font-size: 16px;
+    font-family: "Roboto";
+    align-items: center;
+    margin: 10px;
+
+}
+
+div#content {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "aside section1"
+    "aside section2"
+    "aside section3"
+    "footer footer";
+    size: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #E7E6E6;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+header img {
+    width: 80%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #5B9BD5;
+    padding: 10px;
+    color: white;
+    border-radius: 25px;
+    margin: 10px;
+    border: 2px solid black;
+    text-align: left;
+    width: 54%;
+    align-items: center;
+    
+    
+
+}
+
+.aside h3, li, a {
+    text-align: center;
+    font-weight: bold; 
+    
+}
+
+.aside a {
+    font-size: 20px;
+}
+
+.aside a:hover {
+    font-size: 22px;
+    color: #D7B520;
+    transition: 0.25s;
+}
+
+.aside .form-container {
+    display: block;
+    margin: 15px;
+    font-size: 20px;
+    
+}
+
+.aside .form-container input {
+    border-radius: 15px;
+    height: 24px;
+}
+
+.aside .form-container input:hover {
+    background-color: grey;
+    color: white;
+    transition: 0.25s;
+}
+
+
+.aside .form-container select#lake {
+    width: 170px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.aside .form-container select#lake:hover {
+    background-color: grey;
+    color: white;
+    transition: 0.25s;
+}
+
+.aside .form-container input#accomodation {
+    width: 17px;
+    height: 17px;
+}
+
+.aside .form-container input#button {
+    width: 180px;
+    height: 36px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right-row {
+    font-size: 26px;
+
+}
+
+
+div#section-1 {
+    grid-area: section1;
+    background-color: #FBE5D6;
+    padding: 10px;
+    text-align: left;
+    border-radius: 25px;
+    margin: 20px;
+    border: 2px solid black;
+    width: 98%;
+    float: left;
+    color: rgb(58, 30, 30);
+
+
+}
+
+div#section-2  {
+    grid-area: section1;
+    background-color: #FFF2CC;
+    padding: 10px;
+    text-align: left;
+    border-radius: 25px;
+    margin: 20px;
+    border: 2px solid black;
+    width: 98%;
+    float: left;
+    color: #4401af;
+
+
+
+
+}
+
+div#section-3  {
+    grid-area: section1;
+    background-color: #DEEBF7;
+    padding: 20px;
+    text-align: left;
+    border-radius: 25px;
+    margin: 10px;
+    border: 2px solid black;
+    width: 98%;
+    float: left;
+    color: #a00000;
+
+
+
+}
+
+div#section-1 img {
+    width: 42%;
+    border-radius: 10px;
+    margin: 20px;
+    float: left;
+
+}
+
+div#section-2 img {
+    width: 42%;
+    border-radius: 10px;
+    margin: 20px;
+    float: left;
+
+}
+
+div#section-3 img {
+    width: 45%;
+    border-radius: 10px;
+    margin: 20px;
+    float: left;
+
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #E7E6E6;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 20px;
+    border: 2px solid black;
+    font-size: 20px;
+
+}
+

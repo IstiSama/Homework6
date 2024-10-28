@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="content">
+        <header id="header">
+            <img src="img/header.jpg">
+        </header>
+        <div class="aside">
+            <h3>Könyvjelzők:</h3>
+            <nav>
+                <ul>
+                    <li><a href="#header">Főcím</a></li>
+                    <li><a href="#section-1">1.Szekció</a></li>
+                    <li><a href="#section-2">2.Szekció</a></li>
+                    <li><a href="#section-3">3.Szekció</a></li>
+                    <li><a href="#footer">Oldal alja</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="form-container">
+                <h3>Kérem töltse ki a jelentkezési űrlapot:</h3><br>
+                <form>
+                    <label for="loginName">Név:</label><br>
+                    <input type="text" name="user" id="loginName" required=""><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required=""><br><br>
+                    
+                    <label for="phonenumber">Telefonszám:</label><br>
+                    <input id="phonenumber" name="phonenumber" required=""></input><br><br>
+                    
+                    <label for="lake"><b>Melyik tó érdekli?</b></label>
+                    <br>
+                
+                    <select name="lake" id="lake">
+                        <option value="balaton"><i>Balaton</i></option>
+                        <option value="tiszato"><i>Tisza-tó</i></option>
+                        <option value="szelidito"><i>Szelidi-tó</i> </option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="accomodation"><b>Milyen szállást keres?</b></label>
+                    <br>
+                    <br>
+
+
+                    <input type="checkbox" id="accomodation" name="accomodation" value="hotel">
+                    <label for="accomodation"><i>Szálloda</i> </label><br>
+                    <input type="checkbox" id="accomodation" name="accomodation" value="apartman">
+                    <label for="accomodation"><i>Apartmanház</i> </label><br>
+                    <input type="checkbox" id="accomodation" name="accomodation" value="camping">
+                    <label for="accomodation"><i>Kemping</i> </label>
+
+                    <br>
+                    <br>
+                    
+                    <label for="service"><b>Milyen ellátásban szeretne részesülni?</b></label>
+                    <br>
+                    <br>
+
+                    <input type="radio" name="service" id="full" value="full"> 
+                    <label for="full"><i>Teljes ellátás</i></label>
+                    <br>
+
+                    <input type="radio" name="service" id="half" value="half"> 
+                    <label for="full"><i>Félpanzió</i></label>
+                    <br>
+
+                    <input type="radio" name="service" id="breakfast" value="breakfast"> 
+                    <label for="full"><i>Csak reggeli</i></label>
+
+                    <br>
+                    <input type="radio" name="service" id="none" value="none"> 
+                    <label for="full"><i>Nem kérek ellátást</i></label>
+                    <br>
+                    <br>
+
+                    <label for="shortmessage"><b>Egyéb üzenet:</b></label>
+                    <br>
+                    <br>
+
+                    <textarea name="message" id="message" cols="23" rows="10"> </textarea>
+                    <br>
+                    <br>
+                    
+
+                    <input type="submit" id="button" value="Mehet!">
+                </form>
+            </div>
+
+        </div>
+
+        <div class="right-row">
+            <div id="section-1">
+                <img src="img/balaton.jpg">
+                A Balaton Közép-Európa legnagyobb tava, 
+                amely Magyarország egyik legfontosabb turisztikai látványossága. 
+                <br>
+                Hosszúsága körülbelül 77 km, szélessége helyenként eléri a 14 km-t, 
+                így nagy kiterjedésű vízfelületet nyújt a látogatóknak.
+                <br>
+                A "magyar tengernek" is nevezett tó vize sekély, ami különösen népszerűvé teszi a családok körében, 
+                mivel gyorsan felmelegszik. 
+                <br>
+
+                A tó partján számos üdülőváros található, köztük Siófok, 
+                Balatonfüred és Keszthely, amelyek különféle programokkal és szórakozási lehetőségekkel várják a turistákat. 
+                <br>
+
+                A Balaton-felvidék lankás hegyei borvidékeiről is híresek, így a borrajongók is különleges élményekkel gazdagodhatnak. 
+                Télen a tó gyakran befagy, így a korcsolyázás szerelmesei is kiélhetik szenvedélyüket. 
+                <br>
+                A tó körül futó kerékpárút lehetővé teszi, hogy a sportkedvelők teljes hosszában körbejárják. 
+                A Balaton a természet, a sport és a kikapcsolódás kedvelőinek egyaránt ideális úti cél.
+
+            </div>
+
+            <div id="section-2">
+                <img src="img/tiszato.jfif">
+
+                A Tisza-tó Magyarország második legnagyobb tava, mesterségesen létrehozott víztározó a Tisza folyó mentén. 
+                Eredetileg árvízvédelmi célokból alakították ki, de mára az ország egyik legnépszerűbb turisztikai célpontjává vált. 
+                A tó különlegessége, hogy szigetekkel és sekélyebb, gazdag élővilágú területekkel tagolt, 
+                ami izgalmas élményt kínál a természetkedvelőknek.
+                <br> 
+                A Tisza-tavi Ökocentrum Poroszlón kiemelt látványosság, 
+                ahol a látogatók megismerhetik a tó gazdag növény- és állatvilágát. 
+                A környéken kiépített kerékpárút lehetőséget ad a tó körbebiciklizésére, amit sok turista szívesen kihasznál. 
+                A Tisza-tó nyaranta népszerű a vízi sportok szerelmesei között; kajak, kenu, 
+                és csónakázás mellett horgászatra is ideális. 
+                <br> 
+                Télen a tó sekélyebb részei befagyhatnak, így ilyenkor a korcsolyázás is lehetséges.
+                A Tisza-tó változatos kikapcsolódási lehetőségei és természeti kincsei miatt egyre kedveltebb célpont a hazai és külföldi látogatók körében is.
+            </div>
+
+            <div id="section-3">
+                <img src="img/szelidito.jpg">
+
+                A Szelidi-tó a Duna mentén, Bács-Kiskun megyében található, és Magyarország egyik legmelegebb vizű tava.
+                Természetes úton keletkezett, és bár kisebb a Balatonnál és a Tisza-tónál, népszerű fürdőhely a környéken élők és az idelátogatók körében. 
+                Vizét a napsütés gyorsan felmelegíti, így nyáron különösen kellemes fürdési lehetőséget nyújt. 
+                <br> 
+                A tó környékén homokos partok és zöld területek várják a pihenni vágyókat, családias hangulatot biztosítva. 
+                A sekély, sós vizű tó gazdag ásványi anyag tartalma miatt kedvező hatású lehet a bőrre. 
+                A környéken számos panzió, kemping és étterem található, ami a látogatók kényelmét szolgálja. 
+                <br> 
+                A horgászat szerelmesei is szívesen keresik fel, mivel a tó gazdag halállománnyal büszkélkedhet. 
+                A Szelidi-tó ideális helyszín a csendes, természetközeli kikapcsolódást kedvelők számára.
+            </div>
+
+        </div>
+        <footer id="footer">Kapcsolat:
+            <br>
+            Email: info@magyartenger.hu
+            Telefon: +36 70 269 4208
+            <br>
+            Kövess minket:
+            <a href="https://www.facebook.com/">Facebook</a> | 
+            <a href="https://www.instagram.com/">Instagram </a>| 
+            <a href="https://x.com/?lang=hu">Twitter</a>
+        </footer>
+    </div>
+</body>
+</html>
